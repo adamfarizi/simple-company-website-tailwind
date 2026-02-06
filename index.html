@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Web Portfolio - Login</title>
+    <script src="https://cdn.tailwindcss.com"></script></head>
 <body>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="bg-slate-800 text-white fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <div class="text-xl font-bold">
+                BrandKita
+            </div>
+
+            <!-- Burger -->
+            <button id="menu-btn" class="md:hidden focus:outline-none focus:ring-2 focus:ring-blue-400 rounded">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- Menu Desktop -->
+            <ul class="hidden md:flex gap-6">
+                <li><a href="#home" class="hover:text-blue-400 transition">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-400 transition">About Us</a></li>
+                <li><a href="#portfolio" class="hover:text-blue-400 transition">Portfolio</a></li>
+                <li><a href="#contact" class="hover:text-blue-400 transition">Kontak</a></li>
+                <li>
+                    <a href="data.html" class="bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition">Login</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="menu" class="hidden md:hidden bg-slate-800 px-6 pb-4">
+            <ul class="flex flex-col gap-4 text-center">
+                <li><a href="#home" class="hover:text-blue-400 transition">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-400 transition">About Us</a></li>
+                <li><a href="#portfolio" class="hover:text-blue-400 transition">Portfolio</a></li>
+                <li><a href="#contact" class="hover:text-blue-400 transition">Kontak</a></li>
+                <li>
+                    <a href="data.html" class="bg-blue-600 hover:bg-blue-500 active:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     
 </body>
 </html>
